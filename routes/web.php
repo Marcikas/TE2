@@ -13,4 +13,18 @@
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('landing');
+
+Route::get('/acesso', function () {
+    return view('auth');
+})->name('auth');
+
+Auth::routes(
+    [
+        'reset' => false,
+        'confirm' => false,
+        'views' => false
+    ]
+);
+
+Route::get('/dashboard', 'HomeController@index')->name('dashboard');

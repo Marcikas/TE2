@@ -26,20 +26,22 @@
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    
-    @yield('styles')
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    {{-- <link rel="stylesheet" href="{{ secure_asset('css/landing.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('css/landing.css') }}">
   </head>
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
       <div class="page-loader">
         <div class="loader">Loading...</div>
       </div>
-      @include('landing.navbar')
-      @include('landing.content')      
+      @yield('navbar')
+      @yield('content')      
       <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
     </main>
    
-    @yield('scripts')
+    {{-- <script src=" {{ secure_asset('js/landing.js') }}"></script> --}}
+    <script src=" {{ asset('js/landing.js') }}"></script>
   </body>
 </html>
