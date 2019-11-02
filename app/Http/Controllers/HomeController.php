@@ -25,4 +25,14 @@ class HomeController extends Controller
     {
         return view('dashboard');
     }
+    
+    /**
+     * Renderiza a tela de cotações.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function quotes()
+    {
+        return view('quotes');
+    }
 }
