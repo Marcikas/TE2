@@ -29,3 +29,4 @@ Auth::routes(
 
 Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 Route::get('/quotes', 'HomeController@quotes')->name('quotes');
+Route::get('/user', 'HomeController@user')->name('user');

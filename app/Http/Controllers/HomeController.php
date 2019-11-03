@@ -23,7 +23,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+        $users = \App\User::all();
+        return view('dashboard', ['users' => $users]);
     }
     
     /**
@@ -34,5 +35,15 @@ class HomeController extends Controller
     public function quotes()
     {
         return view('quotes');
+    }
+    
+    /**
+     * Renderiza a tela de cotações.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function user()
+    {
+        return view('user');
     }
 }

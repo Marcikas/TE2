@@ -15,5 +15,6 @@ axios.get('https://economia.awesomeapi.com.br/all/USD-BRL,EUR-BRL,GBP-BRL,ARS-BR
 
 
 
+
     
 
