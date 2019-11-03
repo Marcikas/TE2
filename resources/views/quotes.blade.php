@@ -5,11 +5,11 @@
     <div class="container-fluid">
         <!-- Page Heading -->
         <h1 class="h3 mb-2 text-gray-800">Cotações</h1>
-        <p class="mb-4">Cotações da moeda em tempo real(atualiza a cada minuto).</p>
+        <p class="mb-4">Cotações da moeda em tempo real(atualiza a cada 3 minutos).</p>
         <!-- Content Row -->
         <h4 class="mb-4">Moedas comuns</h4>
 
-        <div class="row">
+        <div class="row" id="coinRow">
                 <!-- Earnings (Monthly) Card Example -->
                 <div class="col-xl-3 col-md-6 mb-4">
                   <div class="card border-left-primary shadow h-100 py-2">
@@ -90,7 +90,7 @@
             <!-- Content Row -->
             <h4 class="mb-4">Criptomoedas</h4>
         <!-- Content Row -->
-        <div class="row">
+        <div class="row" id="cryptoRow">
                 <!-- Earnings (Monthly) Card Example -->
                 <div class="col-xl-3 col-md-6 mb-4">
                   <div class="card border-left-primary shadow h-100 py-2">
@@ -170,5 +170,5 @@
             </div>    
             <!-- Content Row -->
         
-    </div>        
+    </div>     
 @endsection

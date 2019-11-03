@@ -3,6 +3,8 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css');
 
+mix.js('resources/js/ajax.js', 'public/js')    
+
 mix.scripts([
     'resources/landing/lib/jquery/dist/jquery.js',
     'resources/landing/lib/bootstrap/dist/js/bootstrap.min.js',
