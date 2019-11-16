@@ -10,7 +10,7 @@
                 <form action="{{url('/api/update')}}/{{Auth::user()->id}}" enctype="multipart/form-data" method="POST">
                     <div class="form-row">
                         <div class="col-md-3 col-sm-1">
-                            <img id="profileImg" width="150" height="150" class="img-profile rounded-circle" src="{{asset('storage/')}}/{{Auth::user()->photo}}">
+                            <img id="profileImg" width="150" height="150" class="img-profile rounded-circle" src="{{ secure_asset('storage/')}}/{{Auth::user()->photo}}">
                             <br><br><input type="file" class="form-group" name="photo">
                         </div>
                         <div class="col-md-4 col-sm-2 border-left">
