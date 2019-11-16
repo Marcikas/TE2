@@ -69,7 +69,7 @@
                   <li class="nav-item dropdown no-arrow">
                    <a class="nav-link" href="{{ route('user') }}">
                       <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->name }}</span>
-                      <img class="img-profile rounded-circle" src="{{asset('storage/')}}/{{Auth::user()->photo}}">
+                      <img class="img-profile rounded-circle" src="{{ secure_asset('storage/')}}/{{Auth::user()->photo}}">
                     </a>                    
                   </li>      
                 </ul>      
