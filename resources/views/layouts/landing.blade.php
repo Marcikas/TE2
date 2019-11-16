@@ -29,7 +29,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">    
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     {{-- <link rel="stylesheet" href="{{ secure_asset('css/landing.css') }}"> --}}
-    <link rel="stylesheet" href="{{ asset('css/landing.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/landing.css') }}">
   </head>
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
@@ -42,6 +42,6 @@
     </main>
    
     {{-- <script src=" {{ secure_asset('js/landing.js') }}"></script> --}}
-    <script src=" {{ asset('js/landing.js') }}"></script>
+    <script src=" {{ secure_asset('js/landing.js') }}"></script>
   </body>
 </html>

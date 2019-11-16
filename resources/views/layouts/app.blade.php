@@ -7,7 +7,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
 </head>
 <body id="page-top"> 
     <!-- Page Wrapper -->
@@ -78,8 +78,8 @@
 
         @yield('content')   
     </form>
-    <script src="{{ mix('js/app.js') }}"></script>
-    <script src="{{ mix('js/ajax.js') }}"></script>
+    <script src="{{ secure_asset('js/app.js') }}"></script>
+    <script src="{{ secure_asset('js/ajax.js') }}"></script>
     <script>      
       // Datatable
       $(document).ready(function() {
